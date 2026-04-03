@@ -1,0 +1,44 @@
+/* للشاشات الصغيرة (الجوال) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-section {
+        padding: 30px 20px;
+    }
+    
+    .contact-section {
+        padding: 20px;
+    }
+}
+
+/* للشاشات المتوسطة (تابلت) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
